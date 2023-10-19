@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compstible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gaurav - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/06a13bcaca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <nav>
+          <div class="left">Gaurav's Portfolio</div>
+          <div class="right">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>            
+          </div>
+        </nav>
+
+        <div class="leftSection">
+          <div>Hi,</div>
+          My name is <span class="purple">Gaurav</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <!-- <button class="btn">Download Resume</button> -->
+            <a href="Gaurav-resume.pdf" download class="btn">download resume</a>
+            <a href="https://github.com/githubviit" class="btn">Visit Github</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--           about             -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="about.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am Gaurav Wani.I am currently doing my undergrad education. I really like to make web sites/app ,and to try something new in this vast sea of web.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Desigining web Interfaces
+                </li>
+                <li><span>DSA</span><br />Buildig Logic to solve problems</li>
+                <li>
+                  <span>App Development</span><br />Desigining App Interfaces
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>College projects and competitions</span><br />currently Studying in college
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Graduation(2021-2025)</span><br />VIIT pune.
+                </li>
+                <li><span>HSC</span><br />Matoshri Junior college ,Eklahare, Nashik</li>
+                <li>
+                  <span>SSC</span><br />Smita patil Public School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--     services     -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores inventore delectus libero dignissimos est vero natus
+              nam.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Desigining</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores inventore delectus libero dignissimos est vero natus
+              nam.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores inventore delectus libero dignissimos est vero natus
+              nam.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--   portfolio    -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="ticket3.png" />
+            <div class="layer">
+              <h3>Ticket booking App</h3>
+              <p>
+                Travel freely when you can book the tickets on your finger tips.
+                Download now from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="todo.png" />
+            <div class="layer">
+              <h3>To-do list App</h3>
+              <p>
+                The app helps you to keep track of your schedule. Download now
+                from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="uiux2.png" />
+            <div class="layer">
+              <h3>Some of my best ui/ux projects</h3>
+              <p>These are just hobby projects.</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="bton">see more</a>
+      </div>
+    </div>
+
+    <!--    contact      -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>gaurav582official@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9022202159</p>
+            <div class="social-icons">
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/gaurav.wani_582/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/gaurav-wani-2581a322a/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/githubviit"
+                ><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="Gaurav-resume.pdf" download class="bton btn2">download resume</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="bton btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!--   footer    -->
+
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Gaurav's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        
+      <div class="footer-rights">
+        Copyright &#169; www.gauravsportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["App Developer","Web Developer"],
+        typeSpeed: 50,
+      });
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
