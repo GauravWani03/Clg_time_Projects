@@ -1,0 +1,65 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgb(24, 3, 24), rgb(1, 8, 10),rgb(3, 3, 20));
+}
+.calculator{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto) repeat(5,100px);
+    
+}
+
+.calculator > button{
+    cursor: pointer;
+    color: rgb(252, 248, 244);
+    font-size: 2rem;
+    border: 1px solid rgb(54, 50, 50);
+    outline: none;
+    background-color: rgba(26, 19, 19, 0.75);
+    border-radius: 10px;
+    margin: 2px;
+    box-shadow: -0px -0px 10px rgba(200, 200, 255, 2),0px 0px 10px rgba(200,200,255,2);
+}
+.calculator >button:hover{
+    background-color: rgba(44, 40, 40, 0.9);
+    color: aqua;
+}
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1/-1;
+    background-color: rgb(15, 14, 14);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px;
+    margin: 3px;
+
+    box-shadow: -5px -5px 10px rgba(200, 200, 255, 2),5px 5px 15px rgba(200,200,255,2);
+}
+
+.output .screen-up{
+    color: rgb(238, 228, 228);
+    font-size: 1.5rem;
+
+}
+.output .screen-down{
+    color: rgba(250, 253, 253, 0.966);
+    font-size: 2.5rem;
+}
